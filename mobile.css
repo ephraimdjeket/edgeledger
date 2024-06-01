@@ -1,0 +1,90 @@
+@import url(global.css);
+
+@media screen and (max-width: 47.9375em) {
+  /* ===========================================
+   Navigation  mobile
+   =========================================== */
+  .navigation {
+    flex-direction: column;
+  }
+
+  .book {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: var(--primaryspacer) 0rem;
+  }
+
+  .navigation a {
+    font-size: 0.6rem;
+  }
+
+  /* ===========================================
+   Hero  mobile
+   =========================================== */
+
+  .hero-content h1 {
+    font-size: clamp(0.8rem, 4vw, 1.5rem);
+  }
+
+  .hero-content p {
+    font-size: clamp(0.4rem, 4vw, 1rem);
+  }
+
+  .read-more-btn {
+    color: white;
+    font-size: 0.6rem;
+    background-color: var(--primaryBg);
+    padding: 0.4rem;
+    border-radius: 5px;
+  }
+
+  .read-more-btn:hover {
+    background-color: #1e8135;
+  }
+
+  /* ===========================================
+   Main  mobile
+   =========================================== */
+
+  .service-showcase {
+    flex-direction: column;
+    margin: auto;
+    max-width: 260px;
+  }
+
+  .service-showcase h2 {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .service-showcase p {
+    font-weight: 300;
+  }
+
+  /* ===========================================
+   PROVIDE SECTION mobile
+   =========================================== */
+
+  .provide-section {
+    flex-direction: column;
+  }
+
+  .provide-content h3 {
+    font-size: 0.6rem;
+  }
+
+  .provide-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .provide-content p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    font-weight: 300;
+  }
+}
