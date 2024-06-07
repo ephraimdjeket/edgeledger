@@ -4,28 +4,28 @@
    =========================================== */
 
   .navigation a {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 
   .book {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
   }
 
   .logo {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: 300;
     padding: var(--primaryspacer) 0rem;
   }
 
   .hero-content h1 {
-    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-size: clamp(2rem, 4vw, 2.5rem);
     font-weight: 100;
   }
 
   .read-more-btn {
-    font-size: 0.6rem;
-    width: 80px;
+    width: 120px;
+    padding: var(--primaryspacer);
   }
 
   /* ===========================================
@@ -33,9 +33,9 @@
    =========================================== */
 
   .service-showcase {
+    align-items: center;
     flex-direction: row;
-    margin: auto;
-    max-width: 900px;
+    justify-content: center;
     padding: 4rem var(--primaryspacer);
   }
 
@@ -48,7 +48,7 @@
   }
 
   .business-section p {
-    font-size: 0.7rem;
+    font-size: 1rem !important;
   }
 
   .first-section {
@@ -73,13 +73,22 @@
   .provide-content h3,
   .business-section h3,
   .team-section h3 {
-    font-size: 0.6rem;
+    font-size: 1.2rem !important;
+  }
+
+  .provide-content h2,
+  .business-section h2,
+  .team-section h2,
+  .contact-wrapper h2,
+  .service-showcase h2 {
+    font-size: 2rem !important;
   }
 
   .provide-content p,
   .business-section p,
   .team-section p,
   .service-showcase p {
+    font-size: 1.2rem !important;
     line-height: 1.5;
     font-weight: 300;
     max-width: 400px;

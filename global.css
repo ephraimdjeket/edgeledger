@@ -144,7 +144,7 @@ ul {
   justify-self: center;
   align-items: center;
   text-align: center;
-  gap: var(--secondarySpacer);
+  gap: 8rem;
   padding: var(--secondarySpacer) 0rem;
 }
 
@@ -252,7 +252,7 @@ ul {
 
 .business-column img {
   padding: 0.5rem 0rem;
-  height: 200px;
+  height: 2 300px;
   object-fit: cover;
 }
 
