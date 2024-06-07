@@ -8,8 +8,10 @@
   --primaryBg: #28a745;
 }
 
+html,
 body {
   font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
 }
 .book,
 .edge {
@@ -39,6 +41,10 @@ ul {
   list-style: none;
 }
 
+.navigation a {
+  font-size: 0.6rem;
+}
+
 .nav-link {
   display: inline;
   color: white;
@@ -53,6 +59,15 @@ ul {
 /* ===========================================
    HERO
    =========================================== */
+
+.logo {
+  font-weight: 400 !important;
+}
+
+.hero-content h1 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 100;
+}
 
 .hero-content {
   display: flex;
@@ -87,12 +102,18 @@ ul {
 }
 
 .navigation {
+  position: fixed;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #333;
-  padding: var(--primaryspacer);
+  background-color: #333333a2;
   z-index: 10;
+}
+
+.navigation.top {
+  background: transparent;
+  transition: 1.1s ease-in-out;
 }
 
 .hero-content {
@@ -101,6 +122,17 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.read-more-btn {
+  color: white;
+  background-color: var(--primaryBg);
+  border-radius: 5px;
+  padding: 0.4rem;
+}
+
+.read-more-btn:hover {
+  background-color: #1e8135;
 }
 
 /* ===========================================
@@ -114,6 +146,16 @@ ul {
   text-align: center;
   gap: var(--secondarySpacer);
   padding: var(--secondarySpacer) 0rem;
+}
+
+.service-showcase h2 {
+  font-size: 0.8rem !important;
+  font-weight: 500 !important;
+}
+
+.service-showcase p {
+  font-size: 0.6rem !important;
+  font-weight: 300;
 }
 
 .service-section {
@@ -134,12 +176,21 @@ ul {
   display: flex;
 }
 
+.first-section {
+  background-color: var(--primaryBg);
+}
+
 .provide-content {
+  color: white;
+}
+
+.provide-content,
+.business-section,
+.team-section,
+.contact-wrapper {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  color: white;
-  background-color: var(--primaryBg);
   padding: var(--primaryspacer);
 }
 
@@ -148,7 +199,147 @@ ul {
   border: 1px solid white;
   color: white;
   padding: 0.4rem;
-  max-width: 80px;
   text-align: center;
   border-radius: 5px;
+}
+
+.readmore-btn:hover {
+  background-color: #00000041;
+}
+
+.provide-content h3,
+.business-section h3,
+.team-section h3 {
+  font-size: 0.8rem;
+}
+
+.provide-content h2,
+.business-section h2,
+.team-section h2,
+.contact-wrapper h2,
+.service-showcase h2 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.provide-content p,
+.business-section p,
+.team-section p,
+.service-showcase p {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.provide-section img {
+  object-fit: cover;
+}
+
+/* ===========================================
+   BUSINESS SECTION
+   =========================================== */
+.business-section {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.business-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.business-column img {
+  padding: 0.5rem 0rem;
+  height: 200px;
+  object-fit: cover;
+}
+
+.business-column img:hover {
+  opacity: 0.7;
+}
+
+/* ===========================================
+   2ND PROVIDE SECTION mobile
+   =========================================== */
+
+.reverse {
+  background-color: #0284d0;
+}
+
+.size {
+  font-size: 0.6rem;
+}
+
+/* ===========================================
+   TEAM SECTION
+   =========================================== */
+
+.team-section {
+  padding: var(--secondarySpacer);
+  align-items: center;
+  text-align: center;
+}
+
+.team-images {
+  display: flex;
+  gap: var(--secondarySpacer);
+}
+
+/* ===========================================
+   CONTACT SECTION 
+   =========================================== */
+
+.contact-wrapper {
+  width: 100%;
+  background-color: #f4f4f4;
+}
+
+form {
+  display: flex;
+  gap: var(--primaryspacer);
+  padding: var(--primaryspacer) 0rem;
+}
+
+.form-group input {
+  padding: 0.5rem;
+  font-size: 0.6rem;
+  border: none;
+}
+
+.send-btn {
+  background-color: var(--primaryBg);
+  padding: 0.5rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.send-btn:hover {
+  background-color: #2ebe4f;
+}
+
+/* ===========================================
+   FOOTER SECTION 
+   =========================================== */
+
+.footer-bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--primaryspacer);
+  color: white;
+  background-color: #333;
+  padding: var(--primaryspacer);
+}
+
+.footer-icons {
+  color: white;
+  cursor: pointer;
+}
+
+.footer-bg {
+  font-size: 0.5rem;
 }

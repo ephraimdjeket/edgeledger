@@ -1,50 +1,35 @@
 @import url(global.css);
 
-@media screen and (max-width: 47.9375em) {
+@media screen and (max-width: 42.25em) {
   /* ===========================================
    Navigation  mobile
    =========================================== */
   .navigation {
     flex-direction: column;
+    padding: var(--primaryspacer);
   }
 
   .book {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
 
   .logo {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 700;
     padding: var(--primaryspacer) 0rem;
-  }
-
-  .navigation a {
-    font-size: 0.6rem;
   }
 
   /* ===========================================
    Hero  mobile
    =========================================== */
 
-  .hero-content h1 {
-    font-size: clamp(0.8rem, 4vw, 1.5rem);
-  }
-
   .hero-content p {
     font-size: clamp(0.4rem, 4vw, 1rem);
   }
 
   .read-more-btn {
-    color: white;
     font-size: 0.6rem;
-    background-color: var(--primaryBg);
-    padding: 0.4rem;
-    border-radius: 5px;
-  }
-
-  .read-more-btn:hover {
-    background-color: #1e8135;
   }
 
   /* ===========================================
@@ -57,34 +42,68 @@
     max-width: 260px;
   }
 
-  .service-showcase h2 {
-    font-weight: 600;
-    font-size: 1rem;
+  .service-showcase p {
+    max-width: 200px;
   }
 
+  .provide-content h3,
+  .business-section h3,
+  .team-section h3 {
+    font-size: 0.6rem;
+  }
+
+  .provide-content h2,
+  .business-section h2,
+  .team-section h2,
+  .contact-wrapper h2,
+  .service-showcase h2 {
+    font-size: 0.8rem;
+  }
+
+  .provide-content p,
+  .business-section p,
+  .team-section p,
   .service-showcase p {
+    font-size: 0.6rem;
+    line-height: 1.5;
     font-weight: 300;
+  }
+
+  .readmore-btn {
+    font-size: 0.5rem;
+    padding: 0.3rem;
   }
 
   /* ===========================================
    PROVIDE SECTION mobile
    =========================================== */
 
-  .provide-section {
+  .provide-section,
+  .business-section {
     flex-direction: column;
   }
 
-  .provide-content h3 {
-    font-size: 0.6rem;
+  /* ===========================================
+   TEAM SECTION mobile
+   =========================================== */
+
+  .team-images {
+    flex-direction: column;
   }
 
-  .provide-content h2 {
-    font-size: 1.2rem;
+  .team-section img {
+    width: 80vw;
   }
 
-  .provide-content p {
-    font-size: 0.8rem;
-    line-height: 1.5;
-    font-weight: 300;
+  /* ===========================================
+   CONTACT SECTION mobile
+   =========================================== */
+
+  form {
+    flex-direction: column;
+  }
+
+  .form-group input {
+    width: 100%;
   }
 }

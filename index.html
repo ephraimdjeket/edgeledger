@@ -18,15 +18,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+    <!--Javascript-->
+    <script src="navbar.js" defer></script>
     <title>Edgeledger | Home</title>
 </head>
 
-<body>
+<body id="home">
     <!-- ===========================
          Hero section starts here
          =========================== -->
     <header class="hero">
-        <nav class="navigation">
+        <nav class="navigation top">
             <div class="logo-wrapper">
                 <svg class="w-6 h-6 text-gray-800 book dark:text-white" aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -38,20 +40,20 @@
             </div>
 
             <ul>
-                <a href="#">
+                <a href="#home">
                     <li class="nav-link">Home</li>
                 </a>
-                <a href="#">
+                <a href="#about">
                     <li class="nav-link">About</li>
                 </a>
-                <a href="#">
+                <a href="#cases">
                     <li class="nav-link">Cases</li>
                 </a>
                 </a>
-                <a href="#">
+                <a href="#blog">
                     <li class="nav-link">Blog</li>
                 </a>
-                <a href="#">
+                <a href="#contact">
                     <li class="nav-link">Contact</li>
                 </a>
             </ul>
@@ -66,7 +68,7 @@
     <!-- ===========================
          Main section starts here
          =========================== -->
-    <main>
+    <main id="about">
         <section class="service-showcase">
             <div class="service-section"><svg class="svgs -6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 24 24">
@@ -103,7 +105,7 @@
         <!-- ===========================
          Provide section starts here
          =========================== -->
-        <section class="provide-section">
+        <section class="provide-section first-section">
             <img src="images/home/people.jpg" alt="image of edgeledger team">
             <aside class="provide-content">
                 <h3>What you are looking for</h3>
@@ -117,23 +119,27 @@
         <!-- ===========================
          Business section starts here
          =========================== -->
-        <section class="business-section">
+        <section class="business-section" id="cases">
             <h3>This is what we do</h3>
             <h2>Business Cases</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, dolore!
             </p>
-            <a href=""> <img src="images/cases/cases1.jpg" alt="case 1"></a><a href=""> <img
-                    src="images/cases/cases2.jpg" alt="case 2"></a><a href=""> <img src="images/cases/cases3.jpg"
-                    alt="case 3"></a><a href=""></a> <img src="images/cases/cases4.jpg" alt="case 4"><a href=""></a>
-            <img src="images/cases/cases5.jpg" alt="case 5"><a href=""> <img src="#"></a><a href=""> <img
-                    src="images/cases/cases6.jpg" alt="case 6"></a><a href=""> <img src="images/cases/cases7.jpg"
-                    alt="case 7"></a>
+            <section class="business-row">
+                <div class="business-column"><a href=""> <img src="images/cases/cases1.jpg" alt="case 1"></a><a href="">
+                        <img src="images/cases/cases2.jpg" alt="case 2"></div>
+                <div class="business-column"> <a href=""> <img src="images/cases/cases3.jpg" alt="case 3"></a><a
+                        href=""></a><a href=""> <img src="images/cases/cases4.jpg" alt="case 4"></a></div>
+                <div class="business-column"> <a href=""><img src="images/cases/cases5.jpg" alt="case 5"></a><a href="">
+                        <img src="images/cases/cases6.jpg" alt="case 6"></a></a></div>
+                <div class="business-column"> <a href=""> <img src="images/cases/cases7.jpg" alt="case 7"></a> <a
+                        href="">
+                        <img src="images/cases/cases8.jpg" alt="case 8"></a></div>
+            </section>
         </section>
         <!-- ===========================
          2nd Provide section starts here
          =========================== -->
-        <section class="provide-section reverse">
-            <img src="images/home/people.jpg" alt="image of edgeledger team">
+        <section class="provide-section reverse" id="blog">
             <img src="images/home/blog.jpg" alt="Coffee and notebook on a table">
             <aside class="provide-content">
                 <h3>April 16 2020</h3>
@@ -141,7 +147,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias illum, animi earum ea amet sequi
                     reiciendis sit corporis sunt iusto cupiditate odio maxime adipisci cumque eligendi nemo dolore id
                     itaque?</p>
-                <a href="#">Read Our Blog</a>
+                <a href="#" class="readmore-btn size">Read Our Blog</a>
             </aside>
         </section>
         <!-- ===========================
@@ -150,23 +156,30 @@
         <section class="team-section">
             <h3>Who we are</h3>
             <h2>Our Professional Team</h2>
-            <div class="team-wrapper">
-                <img src="images/team/person1.jpg" alt="John Doe">
-                <h3>John Doe</h3>
-                <p>President</p>
-            </div>
-            <div class="team-wrapper">
-                <img src="images/team/person2.jpg" alt="Jane Doe">
-                <h3>Jane Doe</h3>
-                <p>Vice President</p>
-            </div>
-            <div class="team-wrapper">
-                <img src="images/team/person3.jpg" alt="Steve Smith">
-                <h3>Steve Smith</h3>
-                <p>Marketing Head</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, dolore!
+            </p>
+            <div class="team-images">
+                <div class="team-wrapper">
+                    <img src="images/team/person1.jpg" alt="John Doe">
+                    <h3>John Doe</h3>
+                    <p>President</p>
+                </div>
+                <div class="team-wrapper">
+                    <img src="images/team/person2.jpg" alt="Jane Doe">
+                    <h3>Jane Doe</h3>
+                    <p>Vice President</p>
+                </div>
+                <div class="team-wrapper">
+                    <img src="images/team/person3.jpg" alt="Steve Smith">
+                    <h3>Steve Smith</h3>
+                    <p>Marketing Head</p>
+                </div>
             </div>
         </section>
-        <section class="contact-section">
+        <!-- ===========================
+         Contact section section starts here
+         =========================== -->
+        <section class="contact-section" id="contact">
             <img src="/images/home/contact.jpg" alt="Man in front of computer">
             <aside class="contact-wrapper">
                 <h2>Request Callback</h2>
@@ -175,36 +188,33 @@
                         <label for="name" aria-label="hidden"></label>
                         <input type="text" name="name" id="name" placeholder="Enter name">
                     </div>
-                    <div class="form-group"></div>
-                    <label for="email" aria-label="hidden"></label>
-                    <input type="email" name="email" id="email" placeholder="Enter email">
+                    <div class="form-group"> <label for="email" aria-label="hidden"></label>
+                        <input type="email" name="email" id="email" placeholder="Enter email">
                     </div>
-                    <div class="form-group">
-                        <label for="phone" aria-label="hidden"></label>
-                    </div>
-                    <div class="form-group">
+
+                    <div class="form-group"> <label for="phone" aria-label="hidden"></label>
                         <input type="number" name="phone" id="phone" placeholder="Enter phone">
                     </div>
-                    <input type="button" value="Send">
+                    <input type="submit" class="send-btn" value="Send">
                 </form>
             </aside>
         </section>
     </main>
-    <footer>
+    <footer class="footer-bg">
         <div class="socials"><a class="footer-icons" href="#"><svg class="w-6 h-6 text-gray-800 dark:text-white"
-                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
                     viewBox="0 0 24 24">
                     <path
                         d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z" />
                 </svg>
             </a><a class="footer-icons" href="#"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
                     <path fill-rule="evenodd"
                         d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
                         clip-rule="evenodd" />
                 </svg>
             </a><a class="footer-icons" href="#"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
                     <path fill-rule="evenodd"
                         d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z"
                         clip-rule="evenodd" />

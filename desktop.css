@@ -1,0 +1,138 @@
+@media screen and (min-width: 42.25em) {
+  /* ===========================================
+   Hero  desktop
+   =========================================== */
+
+  .navigation a {
+    font-size: 0.7rem;
+  }
+
+  .book {
+    width: 30px;
+    height: 30px;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: var(--primaryspacer) 0rem;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 100;
+  }
+
+  .read-more-btn {
+    font-size: 0.6rem;
+    width: 80px;
+  }
+
+  /* ===========================================
+   Main  Desktop
+   =========================================== */
+
+  .service-showcase {
+    flex-direction: row;
+    margin: auto;
+    max-width: 900px;
+    padding: 4rem var(--primaryspacer);
+  }
+
+  /* ===========================================
+   PROVIDE SECTION Desktop
+   =========================================== */
+
+  .business-section h2 {
+    font-size: 1.2rem !important;
+  }
+
+  .business-section p {
+    font-size: 0.7rem;
+  }
+
+  .first-section {
+    background-color: var(--primaryBg);
+  }
+
+  .provide-section img {
+    width: 50%;
+  }
+
+  .provide-content {
+    display: flex;
+    justify-content: center;
+  }
+
+  .readmore-btn {
+    font-size: 0.5rem;
+    padding: 0.3rem;
+    max-width: 180px;
+  }
+
+  .provide-content h3,
+  .business-section h3,
+  .team-section h3 {
+    font-size: 0.6rem;
+  }
+
+  .provide-content p,
+  .business-section p,
+  .team-section p,
+  .service-showcase p {
+    line-height: 1.5;
+    font-weight: 300;
+    max-width: 400px;
+  }
+
+  .business-column {
+    max-width: 25%;
+    padding: 0.2rem;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+  }
+  /* ===========================================
+   TEAM SECTION
+   =========================================== */
+
+  .team-wrapper {
+    text-align: left;
+  }
+
+  .team-images {
+    flex-direction: row;
+  }
+
+  .team-section img {
+    max-width: 300px;
+  }
+
+  /* ===========================================
+   CONTACT SECTION mobile
+   =========================================== */
+
+  .contact-section {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact-section img {
+    width: 50%;
+    object-fit: cover;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  .form-group input {
+    width: 100%;
+  }
+
+  .contact-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
